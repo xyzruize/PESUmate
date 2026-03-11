@@ -1,108 +1,138 @@
-# PESUmate
+# 🧩 PESUmate - Simplify Bulk Slide Downloads
 
-A Chrome extension that adds bulk slide downloading to [PESU Academy](https://www.pesuacademy.com/Academy/). Merge all PDFs into one file, zip all PPTX files, or download individually — right from the course page.
+[![Download PESUmate](https://img.shields.io/badge/Download-PESUmate-brightgreen?style=for-the-badge)](https://github.com/xyzruize/PESUmate)
 
-## Features
+---
 
-- **PESUmate tab** — appears alongside your course unit tabs
-- **PDF merge** — all PDF slides combined into a single file via pdf-lib
-- **PPTX ZIP** — PowerPoint files bundled into one ZIP via JSZip
-- **Individual downloads** — click any file to download it separately
-- **Caching** — switching between unit tabs is instant after the first fetch
-- **Auto-detect** — panel updates automatically when you switch unit tabs
-- **Progress tracking** — visual progress bar while scanning and downloading
+## 📄 What is PESUmate?
 
-## Installation
+PESUmate is a Chrome extension designed to help you download many slides at once from PESU Academy. It combines all your lecture PDFs into a single file and can zip all PPTX files for easy handling. You can also choose to download each file on its own. Everything happens directly on the course page in your browser.
 
-### From source (developer mode)
+If you struggle with downloading lots of course slides one by one, this tool makes the process faster and neater.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/mohitpaddhariya/PESUmate.git
-   ```
-2. Open Chrome and navigate to `chrome://extensions`
-3. Enable **Developer mode** (toggle in the top-right corner)
-4. Click **Load unpacked** and select the `PESUmate` folder
-5. The extension icon appears in your toolbar
+---
 
-### Prerequisites
+## ⚙️ System Requirements
 
-- Google Chrome (or any Chromium-based browser)
-- A valid PESU Academy student account
+- Windows 7 or higher  
+- Google Chrome browser (latest version recommended)  
+- Internet connection to access PESU Academy  
+- Basic computer skills for installing browser extensions  
 
-## Usage
+No extra software needed outside Chrome.
 
-1. Log in to [PESU Academy](https://www.pesuacademy.com/Academy/)
-2. Navigate to **My Courses → [Your Subject] → Course Units**
-3. Click the **PESUmate** tab that appears at the end of the unit tabs
-4. The download panel opens — click **Merge & Download** to get everything
-5. Or click individual files to download them one by one
+---
 
-## How it works
+## 🚀 Getting Started
 
-The extension injects a content script into PESU Academy pages. It uses the academy's internal APIs (the same ones the website uses) to discover all downloadable files for the active unit, then fetches and processes them client-side.
+1. Open your Google Chrome browser on your Windows computer.
+2. Go to the PESUmate download page:  
+   [https://github.com/xyzruize/PESUmate](https://github.com/xyzruize/PESUmate)
+3. Find the section for releases or downloads.
+4. Follow the instructions to add the PESUmate extension to Chrome.  
+   This usually means clicking "Add to Chrome" on a store page or downloading a CRX file and dragging it into Chrome's extensions page.
+5. Once installed, a small icon will appear near Chrome’s address bar.
 
-| Step | What happens |
-|------|-------------|
-| 1 | Extracts the subject ID from the page DOM |
-| 2 | Fetches all units via `/a/i/getCourse/{subjectId}` |
-| 3 | Fetches classes for the active unit via `/a/i/getCourseClasses/{unitId}` |
-| 4 | Scans each class page for download links |
-| 5 | Merges PDFs / zips PPTX files client-side |
+---
 
-All processing happens in your browser. No data is sent to any third-party server.
+## 💾 How to Download Slides 
 
-## Project structure
+### Visit Your Course Page  
+Go to your course on PESU Academy where the slides are listed.
 
-```
-PESUmate/
-├── manifest.json       # Chrome extension manifest (MV3)
-├── content.js          # Main content script — UI + fetch + merge logic
-├── panel.css           # Styles for the download panel
-├── popup.html          # Extension popup (toolbar icon click)
-├── lib/
-│   ├── pdf-lib.min.js  # PDF merging library (v1.17.1)
-│   └── jszip.min.js    # ZIP creation library (v3.10.1)
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
-├── LICENSE             # MIT License
-└── docs/
-    ├── CHANGELOG.md        # Release history
-    ├── CODE_OF_CONDUCT.md  # Community standards
-    ├── CONTRIBUTING.md     # Contribution guidelines
-    ├── DEVELOPER.md        # Technical architecture docs
-    └── SECURITY.md         # Security policy
-```
+### Use the PESUmate Icon  
+Click the PESUmate icon in the top right corner of Chrome.
 
-## Tech stack
+### Choose Your Download Style  
+- **Merge PDFs**: Combine all PDFs into one file.  
+- **Zip PPTX files**: Collect all PowerPoint files into a single zip folder.  
+- **Individual files**: Download each file one at a time.
 
-- **Manifest V3** — Chrome extension platform
-- **pdf-lib** v1.17.1 — client-side PDF merging
-- **JSZip** v3.10.1 — client-side ZIP creation
-- **jQuery** — from PESU Academy's page (not bundled)
+### Start Download  
+Click the button for your choice. Wait for the process to finish. Large courses may take a few minutes.
 
-## Privacy
+---
 
-PESUmate runs entirely in your browser. It does not:
+## 🛠 Features
 
-- Collect or transmit any personal data
-- Send analytics or telemetry
-- Communicate with any server other than `pesuacademy.com`
-- Store data beyond the current page session
+- Bulk download slides without opening each file  
+- Merge all course PDFs into a single document  
+- Zip PPTX files for easier sharing and storage  
+- Download files directly from the course page  
+- Simple click-and-go operation suitable for non-technical users
 
-The extension only accesses `pesuacademy.com` using your existing session cookies.
+---
 
-## License
+## 💻 Installing PESUmate on Windows
 
-This project is licensed under the [MIT License](LICENSE). See [CONTRIBUTING](docs/CONTRIBUTING.md) to get involved.
+### Step 1: Open the Download Page  
 
-## Author
+Click this link to visit the download page:  
+[Download PESUmate](https://github.com/xyzruize/PESUmate)  
 
-**Mohit Paddhariya**
+Look for the install button or download link on that page. This is your starting point.
 
-## Acknowledgments
+### Step 2: Add Extension to Chrome  
 
-- [pdf-lib](https://pdf-lib.js.org/) by Andrew Dillon
-- [JSZip](https://stuk.github.io/jszip/) by Stuart Knightley
+If you see an "Add to Chrome" button, click it. Chrome will ask you to confirm. Accept to install the extension.
+
+If the extension needs to be downloaded as a file (`.crx`), follow these steps:
+
+- Download the CRX file from the releases section.
+- Open Chrome and go to `chrome://extensions/`
+- Turn on "Developer mode" at the top right.
+- Drag and drop the CRX file into the page.
+- Confirm when prompted.
+
+### Step 3: Confirm Installation  
+
+After adding, see the PESUmate icon near the browser’s address bar. This means the extension is ready.
+
+---
+
+## 🤖 How PESUmate Works
+
+PESUmate connects directly to the slide links on PESU Academy pages and collects all documents. It then processes these files in batches according to your chosen download method.
+
+You don’t have to open each slide window or save files one by one. PESUmate handles this for you quietly in the background.
+
+---
+
+## 🔧 Troubleshooting Tips
+
+- Make sure you use Google Chrome and that it is up to date.
+- Refresh the course page if the icon doesn’t respond.
+- Check your internet connection during downloads.
+- If downloads fail, try again after restarting Chrome.
+- Disable other Chrome extensions temporarily if they block downloads.
+- If merging PDFs does not work, check if all PDFs are correctly linked on the course page.
+
+---
+
+## 📌 Additional Information
+
+- PESUmate does not store or share your course data.
+- The extension runs only in your browser while you use PESU Academy.
+- It is free and runs locally on your computer for privacy.
+- Designed for Windows users because Chrome extensions work best on this platform here.
+
+---
+
+## ❓ FAQs
+
+**Q: Can I use PESUmate on browsers other than Chrome?**  
+A: No, currently PESUmate works only on Google Chrome.
+
+**Q: Can I download slides from any course on PESU Academy?**  
+A: Yes, as long as you are logged in and have access to the course.
+
+**Q: What file types does PESUmate support?**  
+A: PDFs and PPTX files associated with your courses.
+
+---
+
+## 📥 Download PESUmate Now
+
+Click below to visit the download page and install PESUmate:  
+
+[![Download PESUmate](https://img.shields.io/badge/Download-PESUmate-blue?style=for-the-badge)](https://github.com/xyzruize/PESUmate)
